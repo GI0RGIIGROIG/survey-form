@@ -14,7 +14,7 @@
 
 body {
   font-family: 'Roboto-Serif', sans-serif;
-  font-size: 18px;
+  font-size: var(--normal-text);
   font-weight: 400;
   line-height: 1.4;
   color: var(--color-white);
@@ -47,13 +47,13 @@ h1 {
 }
 
 p {
-  font-size: 1.125rem;
+  font-size: 16px;
 }
 
 h1,
 p {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 5px;
 }
 
 label {
@@ -69,7 +69,7 @@ select,
 textarea {
   margin: 0;
   font-family: inherit;
-  font-size: inherit;
+  font-size: var(--normal-text);
   line-height: inherit;
 }
 
@@ -107,7 +107,7 @@ button {
 
 .clue {
   margin-left: 5px;
-  font-size: 18px;
+  font-size: var(--normal-text)x;
   color: #e4e4e4;
 }
 
@@ -159,7 +159,7 @@ form {
 }
 
 .input-textarea {
-  min-height: 120px;
+  min-height: 80px;
   width: 100%;
   padding: 15px;
   resize: vertical;
@@ -173,4 +173,25 @@ form {
   color: inherit;
   border-radius: 2px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+.container{
+      width: 100%;
+      height: 100;
+}
+
+.form-group{
+  margin-left:20px;
+  margin-right: 20px;
+  padding-top: 6px;
+}
+.form-control{
+  height: auto;
+  padding-top: 8px;
+}
+.input-textarea{
+  width:15pc;
+  height:auto;
+}
 }
