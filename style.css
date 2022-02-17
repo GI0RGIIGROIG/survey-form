@@ -162,7 +162,7 @@ form {
   min-height: 80px;
   width: 100%;
   padding: 15px;
-  resize: vertical;
+  resize:both;
 }
 
 .submit-button {
